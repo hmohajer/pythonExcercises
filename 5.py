@@ -12,7 +12,8 @@ class Rectangle():
         if height < 0:
             b = y + height
         self.start_point = (a, b)
-        self.r_points = [self.start_point[0],self.start_point[0]+self.width, self.start_point[1],self.start_point[1]+self.height]
+        # self.r_points = [self.start_point[0],self.start_point[0]+self.width, self.start_point[1],self.start_point[1]+self.height]
+        self.r_points = [a, a+self.width, b, b+self.height]
 
     def surface(self):
         return self.width * self.height
